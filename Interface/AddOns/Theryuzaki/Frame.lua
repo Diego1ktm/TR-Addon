@@ -269,3 +269,18 @@ end
 
 Log('All macro loaded!');
 
+function attack5()
+        
+        SpellUse ('Гаррота')
+	if (IsDeBuf('Гаррота', 'target', true)) then 
+	else
+		SpellUse ('Незаметность')
+ 		SpellUse('Исчезновение');
+	end			
+        if (IsBuf('Мясорубка')) then
+	else		
+        	SpellUse ('Мясорубка')
+	end
+end
+        
+
